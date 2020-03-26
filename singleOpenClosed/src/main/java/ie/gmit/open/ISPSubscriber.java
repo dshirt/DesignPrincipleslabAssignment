@@ -1,11 +1,20 @@
+/*John Lawless
+ * g00351835@gmit.ie
+ *
+ * this class extends the subscriber class and implements
+ * and defines the calculateBill method as it pertains to
+ * an ISP Subscriber
+ * */
+
 package ie.gmit.open;
 
 import java.util.List;
 //look into Abstract methods
 public class ISPSubscriber extends Subscriber {
-
+    //This variable is not common to all
     private long freeUsage;
 
+    //all common variables come from the super class
     public ISPSubscriber(Long subscriberId, String address, Long phoneNumber, int baseRate, long freeUsage) {
         super(subscriberId, address, phoneNumber, baseRate);
         this.freeUsage = freeUsage;
@@ -25,7 +34,7 @@ public class ISPSubscriber extends Subscriber {
         this.freeUsage = freeUsage;
     }
 
-
+    //calculateBill() is defined here for the ISPSubscriber class
     @Override
     public double calculateBill() {
         List<InternetSessionHistory.InternetSession> sessions = InternetSessionHistory.getCurrentSessions(getSubscriberId());

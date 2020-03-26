@@ -1,3 +1,14 @@
+/*John Lawless
+* g00351835@gmit.ie
+*
+* This class was created as a parent class for all types of Subscriber
+* It is an abstract class and contains an abstract method which must be overridden
+* and defined in any class that extends this class
+* An object cannot be creates directly from this abstract class
+* All common variables and methods are contained in this class*/
+
+
+
 package ie.gmit.open;
 
 public abstract class Subscriber {
@@ -50,6 +61,8 @@ public abstract class Subscriber {
     public void setBaseRate(int baseRate) {
         this.baseRate = baseRate;
     }
-
+    //This class is declared but not defined here
+    //It must be defined and implemented in any
+    //class that extends Subscriber
    public abstract double calculateBill ();
 }

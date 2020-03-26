@@ -1,3 +1,13 @@
+/*John Lawless
+23/03/2020
+g00351835@gmit.ie
+
+Design Principals Lab
+Refactor the UserController class so that is it is following the Single
+Responsibility Principal.
+The only responsibility this class now has is to validate a user
+ */
+
 package ie.gmit.single;
 
 import java.util.regex.Matcher;
