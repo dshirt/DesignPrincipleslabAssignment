@@ -11,7 +11,7 @@ package ie.gmit.open;
 import java.util.List;
 
 public class PhoneSubscriber extends Subscriber {
-    
+
      //PhoneSubscriber has no variables outside of those inherited from Subscriber
     public PhoneSubscriber(Long subscriberId, String address, Long phoneNumber, int baseRate) {
         super(subscriberId, address, phoneNumber, baseRate);
